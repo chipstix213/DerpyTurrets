@@ -18,7 +18,7 @@ namespace Scripts {
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "SmallGatBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "SmallArtilleryBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
@@ -94,10 +94,10 @@ namespace Scripts {
                     Type = BlockWeapon, // Upgrade, BlockWeapon, ActiveArmor, PassiveArmor, RegenArmor, Phantom 
                     CriticalReaction = new CriticalDef
                     {
-                        Enable = true,
+                        Enable = false,
                         DefaultArmedTimer = 120,
-                        PreArmed = true,
-                        TerminalControls = true,
+                        PreArmed = false,
+                        TerminalControls = false,
                     },
                 },
                 Other = new OtherDef
@@ -124,9 +124,9 @@ namespace Scripts {
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 4,
+                    ShotsInBurst = 5,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    FireFullBurst = false,
+                    FireFullBurst = true,
                     GiveUpAfterBurst = false,
                     BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
                     DeterministicSpin = false, // Spin barrel position will always be relative to initial / starting positions (spin will not be as smooth).
@@ -181,7 +181,7 @@ namespace Scripts {
                 SmallCannonAmmo, // must list primary, shrapnel and pattern ammos
             },
 
-            Animations = SmallCannonBarrelAnimation,
+            Animations = SmallArtilleryBarrelAnimation
 
             // Don't edit below this line
         };

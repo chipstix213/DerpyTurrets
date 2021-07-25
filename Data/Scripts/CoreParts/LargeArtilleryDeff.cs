@@ -18,7 +18,7 @@ namespace Scripts {
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "LargeGatBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "LargeArtilleryBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
@@ -94,10 +94,10 @@ namespace Scripts {
                     Type = BlockWeapon, // Upgrade, BlockWeapon, ActiveArmor, PassiveArmor, RegenArmor, Phantom 
                     CriticalReaction = new CriticalDef
                     {
-                        Enable = true,
+                        Enable = false,
                         DefaultArmedTimer = 120,
-                        PreArmed = true,
-                        TerminalControls = true,
+                        PreArmed = false,
+                        TerminalControls = false,
                     },
                 },
                 Other = new OtherDef
@@ -113,7 +113,7 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 7200, // visual only, 0 disables and uses RateOfFire
+                    RateOfFire = 20000, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
@@ -180,7 +180,7 @@ namespace Scripts {
             Ammos = new[] {
                 LargeCannonAmmo, // must list primary, shrapnel and pattern ammos
             },
-            Animations = QuadCannonBarrelAnimation,
+            Animations = LargeArtilleryBarrelAnimation,
             // Don't edit below this line
         };
     }

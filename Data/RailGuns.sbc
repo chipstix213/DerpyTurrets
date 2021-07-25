@@ -52,7 +52,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>SmallTurret</BlockPairName>
+			<BlockPairName>SmallRail</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>
@@ -136,7 +136,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>MediumTurret</BlockPairName>
+			<BlockPairName>MediumRail</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>
@@ -176,7 +176,7 @@
 				<TypeId>LargeMissileTurret</TypeId>
 				<SubtypeId>LargeRailBase</SubtypeId>
 			</Id>
-			<DisplayName>Large Railgun Turret</DisplayName>
+			<DisplayName>Large Rail Gun Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
@@ -220,7 +220,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>LargeTurret</BlockPairName>
+			<BlockPairName>LargeRail</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>

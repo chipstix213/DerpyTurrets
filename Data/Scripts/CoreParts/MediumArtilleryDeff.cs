@@ -18,7 +18,7 @@ namespace Scripts {
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "MediumGatBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "MediumArtilleryBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
@@ -29,7 +29,7 @@ namespace Scripts {
 
                 },
                 Muzzles = new[] {
-                    "muzzle_missile_1",
+                    "muzzle_missile_1","muzzle_missile_2","muzzle_missile_3","muzzle_missile_4",
                 },
                 Ejector = "",
                 Scope = "dummy_camera", //Where line of sight checks are performed from must be clear of block collision
@@ -94,10 +94,10 @@ namespace Scripts {
                     Type = BlockWeapon, // Upgrade, BlockWeapon, ActiveArmor, PassiveArmor, RegenArmor, Phantom 
                     CriticalReaction = new CriticalDef
                     {
-                        Enable = true,
+                        Enable = false,
                         DefaultArmedTimer = 120,
-                        PreArmed = true,
-                        TerminalControls = true,
+                        PreArmed = false,
+                        TerminalControls = false,
                     },
                 },
                 Other = new OtherDef
@@ -113,7 +113,7 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 7200, // visual only, 0 disables and uses RateOfFire
+                    RateOfFire = 1, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
@@ -128,7 +128,7 @@ namespace Scripts {
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = false,
                     GiveUpAfterBurst = false,
-                    BarrelSpinRate = 0, // visual only, 0 disables and uses RateOfFire
+                    BarrelSpinRate = 5, // visual only, 0 disables and uses RateOfFire
                     DeterministicSpin = false, // Spin barrel position will always be relative to initial / starting positions (spin will not be as smooth).
                     SpinFree = true, // Spin while not firing
                     StayCharged = false, // Will start recharging whenever power cap is not full
@@ -181,7 +181,7 @@ namespace Scripts {
                 MediumCannonAmmo, // must list primary, shrapnel and pattern ammos
             },
 
-            Animations = MediumCannonBarrelAnimation,
+            Animations = MediumArtilleryBarrelAnimation,
 
             // Don't edit below this line
         };

@@ -1,4 +1,5 @@
 ﻿using static Scripts.Structure;
+using static Scripts.Structure;
 using static Scripts.Structure.WeaponDefinition;
 using static Scripts.Structure.WeaponDefinition.ModelAssignmentsDef;
 using static Scripts.Structure.WeaponDefinition.HardPointDef;
@@ -94,10 +95,10 @@ namespace Scripts {
                     Type = BlockWeapon, // Upgrade, BlockWeapon, ActiveArmor, PassiveArmor, RegenArmor, Phantom 
                     CriticalReaction = new CriticalDef
                     {
-                        Enable = true,
+                        Enable = false,
                         DefaultArmedTimer = 120,
-                        PreArmed = true,
-                        TerminalControls = true,
+                        PreArmed = false,
+                        TerminalControls = false,
                     },
                 },
                 Other = new OtherDef
@@ -135,7 +136,7 @@ namespace Scripts {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
+                    PreFiringSound = "PreRailShot",
                     FiringSound = "RailShot", // WepShipGatlingShot
                     FiringSoundPerShot = true,
                     ReloadSound = "",

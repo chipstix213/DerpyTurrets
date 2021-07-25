@@ -9,7 +9,7 @@
 				<TypeId>LargeMissileTurret</TypeId>
 				<SubtypeId>SmallBase</SubtypeId>
 			</Id>
-			<DisplayName>Small Turret</DisplayName>
+			<DisplayName>Small Cannon Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
@@ -93,7 +93,7 @@
 				<TypeId>LargeMissileTurret</TypeId>
 				<SubtypeId>MediumBase</SubtypeId>
 			</Id>
-			<DisplayName>Medium Turret</DisplayName>
+			<DisplayName>Medium Cannon Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
@@ -176,7 +176,7 @@
 				<TypeId>LargeMissileTurret</TypeId>
 				<SubtypeId>LargeBase</SubtypeId>
 			</Id>
-			<DisplayName>Large Turret</DisplayName>
+			<DisplayName>Large Cannon Turret</DisplayName>
 			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>

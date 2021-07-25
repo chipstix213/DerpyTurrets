@@ -94,10 +94,10 @@ namespace Scripts {
                     Type = BlockWeapon, // Upgrade, BlockWeapon, ActiveArmor, PassiveArmor, RegenArmor, Phantom 
                     CriticalReaction = new CriticalDef
                     {
-                        Enable = true,
+                        Enable = false,
                         DefaultArmedTimer = 120,
-                        PreArmed = true,
-                        TerminalControls = true,
+                        PreArmed = false,
+                        TerminalControls = false,
                     },
                 },
                 Other = new OtherDef
@@ -113,7 +113,7 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 7200, // visual only, 0 disables and uses RateOfFire
+                    RateOfFire = 36000, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
@@ -135,7 +135,7 @@ namespace Scripts {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "",
+                    PreFiringSound = "PreRailShot",
                     FiringSound = "RailShot", // WepShipGatlingShot
                     FiringSoundPerShot = true,
                     ReloadSound = "",
