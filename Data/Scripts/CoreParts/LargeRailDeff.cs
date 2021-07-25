@@ -11,14 +11,14 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.Hardwar
 namespace Scripts {   
     partial class Parts {
         // Don't edit above this line
-        WeaponDefinition LargeTurret => new WeaponDefinition
+        WeaponDefinition LargeRailTurret => new WeaponDefinition
         {
 
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "LargeBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "LargeRailBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
@@ -29,7 +29,7 @@ namespace Scripts {
 
                 },
                 Muzzles = new[] {
-                    "muzzle_missile_1","muzzle_missile_2","muzzle_missile_3","muzzle_missile_4",
+                    "muzzle_missile_1","muzzle_missile_2",
                 },
                 Ejector = "",
                 Scope = "dummy_camera", //Where line of sight checks are performed from must be clear of block collision
@@ -118,7 +118,7 @@ namespace Scripts {
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 180, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 69, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 1, //heat generated per shot
                     MaxHeat = 5000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
@@ -136,7 +136,7 @@ namespace Scripts {
                 Audio = new HardPointAudioDef
                 {
                     PreFiringSound = "",
-                    FiringSound = "CannonShot", // WepShipGatlingShot
+                    FiringSound = "RailShot", // WepShipGatlingShot
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -180,7 +180,7 @@ namespace Scripts {
             Ammos = new[] {
                 LargeCannonAmmo, // must list primary, shrapnel and pattern ammos
             },
-            Animations = QuadCannonBarrelAnimation,
+            
             // Don't edit below this line
         };
     }

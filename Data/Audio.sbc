@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Sounds>
+     <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcCannonShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>100</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Cannon.wav</Start>
+        </Wave>
+		
+		
+      </Waves>
+    </Sound>
+	
+	    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealCannonShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>25</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Cannon.wav</Start>
+        </Wave>
+
+
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcArtilleryShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>100</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\40mm.wav</Start>
+        </Wave>
+		
+		
+      </Waves>
+    </Sound>
+	
+	    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealArtilleryShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>25</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\40mm.wav</Start>
+        </Wave>
+
+
+      </Waves>
+    </Sound>
+
+    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>ArcRailShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>100</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Railgun.wav</Start>
+        </Wave>
+		
+		
+      </Waves>
+    </Sound>
+	
+	    <Sound>
+      <Id>
+        <TypeId>MyObjectBuilder_AudioDefinition</TypeId>
+        <SubtypeId>RealRailShot</SubtypeId>
+      </Id>
+      <Category>SHOT</Category>
+      <MaxDistance>25</MaxDistance>
+      <Volume>2</Volume>
+      <PreventSynchronization>0</PreventSynchronization>
+      <SoundLimit>4</SoundLimit>
+      <Waves>
+        <Wave Type="D3">
+          <Start>Audio\Railgun.wav</Start>
+        </Wave>
+
+
+      </Waves>
+    </Sound>
+
+
+  
+  </Sounds>
+</Definitions>
