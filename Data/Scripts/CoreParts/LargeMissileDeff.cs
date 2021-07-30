@@ -1,4 +1,5 @@
 ﻿using static Scripts.Structure;
+using static Scripts.Structure;
 using static Scripts.Structure.WeaponDefinition;
 using static Scripts.Structure.WeaponDefinition.ModelAssignmentsDef;
 using static Scripts.Structure.WeaponDefinition.HardPointDef;
@@ -11,25 +12,25 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.Hardwar
 namespace Scripts {   
     partial class Parts {
         // Don't edit above this line
-        WeaponDefinition SmallRailTurret => new WeaponDefinition
+        WeaponDefinition LargeMissileTurret => new WeaponDefinition
         {
 
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "SmallRailBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "LargeMissileBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
                         ElevationPartId = "MissileTurretBarrels",  // The subpart that handles up & down. Do not include subpart_ when listing it here.
-                         DurabilityMod = 0.25f,
+                        DurabilityMod = 0.25f,
                         IconName = "TestIcon.dds"
                     },
 
                 },
                 Muzzles = new[] {
-                    "muzzle_missile_1",
+                    "muzzle_missile_1", "muzzle_missile_2", "muzzle_missile_3", "muzzle_missile_4", "muzzle_missile_5", "muzzle_missile_6",
                 },
                 Ejector = "",
                 Scope = "dummy_camera", //Where line of sight checks are performed from must be clear of block collision
@@ -86,8 +87,8 @@ namespace Scripts {
                     ElevateRate = 0.05f,
                     MinAzimuth = -180, // Azimuth Translates to Rotation speed. A value of -90 for Min, and 90 for Max, results in a Turret with a 180 Degree limit.
                     MaxAzimuth = 180,
-                    MinElevation = -15,
-                    MaxElevation = 95,
+                    MinElevation = 0,
+                    MaxElevation = 65,
                     FixedOffset = false,
                     InventorySize = 1.65f,
                     Offset = Vector(x: 0, y: 0, z: 0),
@@ -113,18 +114,18 @@ namespace Scripts {
                 },
                 Loading = new LoadingDef
                 {
-                    RateOfFire = 36000, // visual only, 0 disables and uses RateOfFire
+                    RateOfFire = 7200, // visual only, 0 disables and uses RateOfFire
                     BarrelsPerShot = 1,
                     TrajectilesPerBarrel = 1, // Number of Trajectiles per barrel per fire event.
                     SkipBarrels = 0,
                     ReloadTime = 180, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
-                    DelayUntilFire = 69, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
+                    DelayUntilFire = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     HeatPerShot = 1, //heat generated per shot
                     MaxHeat = 5000, //max heat before weapon enters cooldown (70% of max heat)
                     Cooldown = .95f, //percent of max heat to be under to start firing again after overheat accepts .2-.95
                     HeatSinkRate = 9000, //amount of heat lost per second
                     DegradeRof = false, // progressively lower rate of fire after 80% heat threshold (80% of max heat)
-                    ShotsInBurst = 4,
+                    ShotsInBurst = 6,
                     DelayAfterBurst = 0, // Measured in game ticks (6 = 100ms, 60 = 1 seconds, etc..).
                     FireFullBurst = false,
                     GiveUpAfterBurst = false,
@@ -135,8 +136,8 @@ namespace Scripts {
                 },
                 Audio = new HardPointAudioDef
                 {
-                    PreFiringSound = "PreRailShot",
-                    FiringSound = "RailShot", // WepShipGatlingShot
+                    PreFiringSound = "",
+                    FiringSound = "WepTurretMissileShot", // WepShipGatlingShot
                     FiringSoundPerShot = true,
                     ReloadSound = "",
                     NoAmmoSound = "",
@@ -147,42 +148,40 @@ namespace Scripts {
                 Graphics = new HardPointParticleDef
                 {
 
-                   Effect1 = new ParticleDef
+                    Effect1 = new ParticleDef
                     {
-                        Name = "RailBolt", // Smoke_LargeGunShot
+                        Name = "Smoke_Missile", // Smoke_LargeGunShot
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -1),
 
                         Extras = new ParticleOptionDef
                         {
                             Restart = false,
                             MaxDistance = 150,
                             MaxDuration = 0,
-                            Scale = 0.5f,
+                            Scale = 1f,
                         },
                     },
                     Effect2 = new ParticleDef
                     {
                         Name = "Smoke_LargeGunShot",//Muzzle_Flash_Large
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
-                        Offset = Vector(x: 0, y: 0, z: 0),
+                        Offset = Vector(x: 0, y: 0, z: -1),
 
                         Extras = new ParticleOptionDef
                         {
                             Restart = false,
                             MaxDistance = 150,
                             MaxDuration = 0,
-                            Scale = 0.5f,
+                            Scale = 1f,
                         },
                     },
                 },
             },
             Ammos = new[] {
-                SmallCannonAmmo, // must list primary, shrapnel and pattern ammos
+                LargeCannonAmmo, // must list primary, shrapnel and pattern ammos
             },
-
             
-
             // Don't edit below this line
         };
     }
