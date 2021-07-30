@@ -13,7 +13,7 @@
       <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
       <SecondarySoundName>WepShipGatlingRotation</SecondarySoundName>
       <AmmoMagazines>
-        <AmmoMagazine Subtype="Energy" />
+        <AmmoMagazine Subtype="Example_Weapon_AmmoBased_Magazine" />
       </AmmoMagazines>
       <ReloadTime>0</ReloadTime>
     </Weapon>

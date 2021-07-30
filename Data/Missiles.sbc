@@ -7,10 +7,10 @@
 		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> 
 			<Id> 
 				<TypeId>LargeMissileTurret</TypeId>
-				<SubtypeId>SmallRailBase</SubtypeId>
+				<SubtypeId>SmallMissileBase</SubtypeId>
 			</Id>
-			<DisplayName>Small Rail Gun Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\Cubes\SmallRail.dds</Icon>
+			<DisplayName>Small Missile Turret</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\SmallMissile.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -18,7 +18,7 @@
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="1" y="1" z="1"/>
 			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\Large\SmallRailTurret\SmallBase.mwm</Model>
+			<Model>Models\Cubes\Large\SmallRocket\SmallBase.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<Components>
 				<Component Subtype="SteelPlate" Count="5" />
@@ -35,9 +35,9 @@
 				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="1" EndY="1" />
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SmallRailTurret\SmallBase_BS1.mwm" />
-				<Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SmallRailTurret\SmallBase_BS2.mwm" />
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SmallRailTurret\SmallBase_BS3.mwm" />
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\SmallRocket\SmallBase_BS1.mwm" />
+				<Model BuildPercentUpperBound="0.66" File="Models\Cubes\Large\SmallRocket\SmallBase_BS2.mwm" />
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\SmallRocket\SmallBase_BS3.mwm" />
 			</BuildProgressModels>
 			<VoxelPlacement>
 				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -52,7 +52,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>SmallRail</BlockPairName>
+			<BlockPairName>SmallMissile</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>
@@ -91,10 +91,10 @@
 		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> 
 			<Id> 
 				<TypeId>LargeMissileTurret</TypeId>
-				<SubtypeId>MediumRailBase</SubtypeId>
+				<SubtypeId>MediumMissileBase</SubtypeId>
 			</Id>
-			<DisplayName>Medium Rail Gun Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\Cubes\MediumRail.dds</Icon>
+			<DisplayName>Medium Missile Turret</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\MediumMissile.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -102,7 +102,7 @@
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="3" y="2" z="3"/>
 			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\Large\MediumRailTurret\MediumBase.mwm</Model>
+			<Model>Models\Cubes\Large\MediumRocket\MediumBase.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<Components>
 				<Component Subtype="SteelPlate" Count="5" />
@@ -119,9 +119,9 @@
 				<MountPoint Side="Bottom" StartX="0" StartY="0" EndX="3" EndY="3" />
 			</MountPoints>
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MediumRailTurret\MediumBase_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\MediumRailTurret\MediumBase_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MediumRailTurret\MediumBase_BS3.mwm"/>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\MediumRocket\MediumBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\MediumRocket\MediumBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\MediumRocket\MediumBase_BS3.mwm"/>
 			</BuildProgressModels>
 			<VoxelPlacement>
 				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -136,7 +136,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>MediumRail</BlockPairName>
+			<BlockPairName>MediumMissile</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>
@@ -174,10 +174,10 @@
 		<Definition xsi:type="MyObjectBuilder_LargeTurretBaseDefinition"> 
 			<Id> 
 				<TypeId>LargeMissileTurret</TypeId>
-				<SubtypeId>LargeRailBase</SubtypeId>
+				<SubtypeId>LargeMissileBase</SubtypeId>
 			</Id>
-			<DisplayName>Large Rail Gun Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\Cubes\LargeRail.dds</Icon>
+			<DisplayName>Large Missile Turret</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\LargeMissile.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -185,7 +185,7 @@
 			<BlockTopology>TriangleMesh</BlockTopology>
 			<Size x="5" y="4" z="5"/>
 			<ModelOffset x="0" y="0" z="0"/>
-			<Model>Models\Cubes\Large\LargeRailTurret\LargeBase.mwm</Model>
+			<Model>Models\Cubes\Large\LargeRocket\LargeBase.mwm</Model>
 			<UseModelIntersection>true</UseModelIntersection>
 			<Components>
 				<Component Subtype="SteelPlate" Count="5" />
@@ -203,9 +203,9 @@
 			</MountPoints>
 
 			<BuildProgressModels>
-				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\LargeRailTurret\LargeBase_BS1.mwm"/>
-				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\LargeRailTurret\LargeBase_BS2.mwm"/>
-				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\LargeRailTurret\LargeBase_BS3.mwm"/>
+				<Model BuildPercentUpperBound="0.33" File="Models\Cubes\Large\LargeRocket\LargeBase_BS1.mwm"/>
+				<Model BuildPercentUpperBound="0.67" File="Models\Cubes\Large\LargeRocket\LargeBase_BS2.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Cubes\Large\LargeRocket\LargeBase_BS3.mwm"/>
 			</BuildProgressModels>
 			<VoxelPlacement>
 				<!--Possible settings Both,InVoxel,OutsideVoxel,Volumetric. If volumetric set than MaxAllowed and MinAllowed will be used.-->
@@ -220,7 +220,7 @@
 					<MinAllowed>0.01</MinAllowed>
 				</DynamicMode>
 			</VoxelPlacement>
-			<BlockPairName>LargeRail</BlockPairName>
+			<BlockPairName>LargeMissile</BlockPairName>
 			<MirroringY>Z</MirroringY>
 			<MirroringZ>Y</MirroringZ>
 			<EdgeType>Light</EdgeType>

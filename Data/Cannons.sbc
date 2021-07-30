@@ -10,7 +10,7 @@
 				<SubtypeId>SmallBase</SubtypeId>
 			</Id>
 			<DisplayName>Small Cannon Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\SmallCannon.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -94,7 +94,7 @@
 				<SubtypeId>MediumBase</SubtypeId>
 			</Id>
 			<DisplayName>Medium Cannon Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\MediumCannon.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -177,7 +177,7 @@
 				<SubtypeId>LargeBase</SubtypeId>
 			</Id>
 			<DisplayName>Large Cannon Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\LargeCannon.dds</Icon>>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>

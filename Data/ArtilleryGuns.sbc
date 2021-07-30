@@ -10,7 +10,7 @@
 				<SubtypeId>SmallArtilleryBase</SubtypeId>
 			</Id>
 			<DisplayName>Small Artillery Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\SmallGat.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -94,7 +94,7 @@
 				<SubtypeId>MediumArtilleryBase</SubtypeId>
 			</Id>
 			<DisplayName>Medium Artillery Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<Icon>Textures\GUI\Icons\Cubes\MediumGat.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
@@ -176,8 +176,8 @@
 				<TypeId>LargeMissileTurret</TypeId>
 				<SubtypeId>LargeArtilleryBase</SubtypeId>
 			</Id>
-			<DisplayName>Large rtillery Turret</DisplayName>
-			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<DisplayName>Large Artillery Turret</DisplayName>
+			<Icon>Textures\GUI\Icons\Cubes\LargeGat.dds</Icon>
 			<Description>Description_MissileTurret</Description>
 			<CubeSize>Large</CubeSize>
 			<GuiVisible>false</GuiVisible>
