@@ -149,7 +149,7 @@ namespace Scripts {
 
                     Effect1 = new ParticleDef
                     {
-                        Name = "Smoke_Missile", // Smoke_LargeGunShot
+                        Name = "Missile_Smoke", // Smoke_LargeGunShot
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: -0.5),
 
