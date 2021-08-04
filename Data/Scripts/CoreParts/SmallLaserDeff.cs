@@ -11,14 +11,14 @@ using static Scripts.Structure.WeaponDefinition.HardPointDef.HardwareDef.Hardwar
 namespace Scripts {   
     partial class Parts {
         // Don't edit above this line
-        WeaponDefinition SmallRailTurret => new WeaponDefinition
+        WeaponDefinition SmallLaserTurret => new WeaponDefinition
         {
 
             Assignments = new ModelAssignmentsDef
             {
                 MountPoints = new[] {
                     new MountPointDef {
-                        SubtypeId = "SmallRailBase",  // Your Cubeblock SubtypeID, for your Gun.
+                        SubtypeId = "SmallLaserBase",  // Your Cubeblock SubtypeID, for your Gun.
                         SpinPartId = "None",
                         MuzzlePartId = "MissileTurretBarrels",   // Where your Muzzles are located. Do not include subpart_ when listing it here.
                         AzimuthPartId = "MissileTurretBase1",  // The subpart that handles Spinning. Do not include subpart_ when listing it here.
