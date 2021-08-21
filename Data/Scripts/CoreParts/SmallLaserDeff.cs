@@ -149,7 +149,7 @@ namespace Scripts {
 
                    Effect1 = new ParticleDef
                     {
-                        Name = "RailBolt", // Smoke_LargeGunShot
+                        Name = "", // Smoke_LargeGunShot
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
@@ -163,7 +163,7 @@ namespace Scripts {
                     },
                     Effect2 = new ParticleDef
                     {
-                        Name = "Smoke_LargeGunShot",//Muzzle_Flash_Large
+                        Name = "",//Muzzle_Flash_Large
                         Color = Color(red: 0, green: 0, blue: 0, alpha: 1),
                         Offset = Vector(x: 0, y: 0, z: 0),
 
@@ -178,7 +178,7 @@ namespace Scripts {
                 },
             },
             Ammos = new[] {
-                SmallCannonAmmo, // must list primary, shrapnel and pattern ammos
+                SmalllaserAmmo, // must list primary, shrapnel and pattern ammos
             },
 
             
