@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Weapons>
+    
+    <Weapon>
+      <Id>
+          <TypeId>WeaponDefinition</TypeId>
+          <SubtypeId>Example_Weapon_AmmoBased</SubtypeId>
+      </Id>
+      <MissileAmmoData RateOfFire="120" ShootSoundName="WepShipSmallMissileShot" FlightSoundName="MissileFlightSound" ShotsInBurst="19" />
+      <DeviateShotAngle>0.1</DeviateShotAngle>
+      <DeviateShotAngleAiming>0.1</DeviateShotAngleAiming>
+      <NoAmmoSoundName>WepShipGatlingNoAmmo</NoAmmoSoundName>
+      <AmmoMagazines>
+          <AmmoMagazine Subtype="GunAmmo_Magazine" />
+      </AmmoMagazines>
+      <ReloadTime>4000</ReloadTime>
+      <Effects>
+        <Effect Action="BeforeShoot" Dummy="barrel_001" Particle="Muzzle_Flash_RailgunLarge" Loop="false" InstantStop="false"/>
+
+        <Effect Action="BeforeShoot" Dummy="barrel_002" Particle="Muzzle_Flash_RailgunLarge" Loop="false" InstantStop="false"/>
+    </Effects>
+  </Weapon>
+
+  </Weapons>
+ 
+</Definitions>

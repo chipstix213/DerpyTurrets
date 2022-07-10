@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<CubeBlocks>
+			<Definition xsi:type="MyObjectBuilder_WeaponBlockDefinition">
+				<Id>
+					<TypeId>SmallMissileLauncherReload</TypeId>
+				<SubtypeId>TwinFixedRail</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_TwinFixedRail}</DisplayName>
+			<Description>{LOC:Description_TwinFixedRail}</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Large</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="2" z="8"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Cubes\Large\TwinFixedRail\TwinFixedRail.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="50" />
+                <Component Subtype="Construction" Count="150" />
+                <Component Subtype="Superconductor" Count="150" />
+                <Component Subtype="LargeTube" Count="60" />
+                <Component Subtype="PowerCell" Count="100"/>
+                <Component Subtype="Computer" Count="100" />
+                <Component Subtype="SteelPlate" Count="300" />
+            </Components>
+            <CriticalComponent Subtype="Computer" Index="0" />
+
+			<BlockPairName>TwinFixedRail</BlockPairName>
+            <Center x="0" y="1" z="6" />
+            <MirroringY>Z</MirroringY>
+            <MirroringZ>Y</MirroringZ>
+            <BuildTimeSeconds>100</BuildTimeSeconds>
+            <EdgeType>Light</EdgeType>
+            <WeaponDefinitionId Subtype="LargeRailgun" />
+            <ResourceSinkGroup>DefenseAdative</ResourceSinkGroup>
+            <InventoryMaxVolume>0.24</InventoryMaxVolume>
+            <StandbyPowerConsumption>0.0001</StandbyPowerConsumption>
+            <DamageEffectName>Damage_Railgun_Large</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <DestroyEffect>BlockDestroyed_Large3X</DestroyEffect>
+            <DestroySound>PoofExplosionCat3</DestroySound>
+            <PCU>80</PCU>
+            <IsAirTight>false</IsAirTight>
+            <InventoryFillFactorMin>.6</InventoryFillFactorMin>
+            <TargetingGroups>
+                <string>Weapons</string>
+            </TargetingGroups>
+
+		</Definition>
+	</CubeBlocks>
+</Definitions>

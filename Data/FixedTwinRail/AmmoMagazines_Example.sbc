@@ -6,7 +6,7 @@
   	<AmmoMagazine>
       <Id>
         <TypeId>AmmoMagazine</TypeId>
-        <SubtypeId>Example_Weapon_AmmoBased_Magazine</SubtypeId>
+        <SubtypeId>GunAmmo_Magazine</SubtypeId>
       </Id>
       <DisplayName>Example Ammo Box</DisplayName>
       <Icon>Textures\GUI\Icons\ammo\Ammo_Box.dds</Icon>
@@ -20,7 +20,7 @@
       <Model>Models\Weapons\Rifle_Ammo.mwm</Model>
       <PhysicalMaterial>Ammo</PhysicalMaterial>
       <Capacity>1</Capacity>
-      <AmmoDefinitionId Subtype="Blank" />
+      <AmmoDefinitionId Subtype="GunAmmo" />
 	   <MinimalPricePerUnit>100</MinimalPricePerUnit>
 <CanPlayerOrder>false</CanPlayerOrder>
     </AmmoMagazine>
